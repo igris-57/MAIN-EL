@@ -1,7 +1,3 @@
-<!--
-author: Zhida Li
-last edit: Feb. 8, 2022
--->
 {% extends "layout.html" %}
 
 {% block content %}
@@ -9,14 +5,14 @@ last edit: Feb. 8, 2022
     <section id="intro">
         <div class="jumbotron">
             <div class="container">
-                <!-- define columns -->
                 <div class="row">
                     <div class="col-md-10">
-                        <h1>BGP ANOMALY DETECTION IN REAL-TIME & OFF-LINE</h1>
+                        <h1>BGP ANOMALY DETECTION</h1>
                         <p class="lead">
-                            A BGP anomaly detection framework that integrates
-                            various stages of the anomaly detection process.
+                            An advanced framework for detecting BGP anomalies using deep learning.
+                            Monitor, analyze, and classify network routing anomalies in real-time and offline.
                         </p>
+                        <p class="sub-lead">Powered by LSTM, GRU & Neural Networks</p>
                         <br>
                         <a class="btn btn-primary btn-md" href="#intro_2modes">Get started
                             <i class="fas fa-chevron-right"></i>
@@ -26,24 +22,6 @@ last edit: Feb. 8, 2022
             </div>
         </div>
     </section>
-
-    <!-- BGPAnomalyDetect Framework -->
-    <section id="intro_framework">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <h3>Framework</h3>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-10 offset-md-1">
-                    <img src="../static/imgs/bgpGuard_framework.png" alt="BGPAnomalyDetect Framework">
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <!-- Application modes section -->
     <section id="intro_2modes">
@@ -55,25 +33,18 @@ last edit: Feb. 8, 2022
             </div>
 
             <div class="row">
-                <!-- 6 6 pattern -->
-
                 <!-- 1st column -->
                 <div class="col-md-6">
-                    <!-- each part have a div, + white background + shadow -->
                     <div class="outer">
-                        <!-- add the link -->
                         <a href="{{ url_for('bgp_ad_realtime') }}">
-                            <!-- top figure, down content, 2 div -->
                             <div class="upper">
                                 <img src="../static/imgs/bgpGuard_index_realtime.png">
-                                <!-- words on figure -->
                                 <div class="innertext">
                                     <span>Try it</span>
                                     <p></p>
                                     <h5>Visualize the detection results</h5>
                                 </div>
                             </div>
-                            <!-- words below figure -->
                             <div class="lower">
                                 <h3>Real-Time Detection</h3>
                                 <span style="margin-left:18px;margin-right:7px;"><i class="fas fa-database"></i></span>
@@ -86,23 +57,18 @@ last edit: Feb. 8, 2022
                     </div>
                 </div>
 
-                <!-- 2st column -->
+                <!-- 2nd column -->
                 <div class="col-md-6">
-                    <!-- each part have a div, + white background + shadow -->
                     <div class="outer">
-                        <!-- add the link -->
                         <a href="{{ url_for('bgp_ad_offline') }}">
-                            <!-- top figure, down content, 2 div -->
                             <div class="upper">
                                 <img src="../static/imgs/bgpGuard_index_offline.png">
-                                <!-- words on figure -->
                                 <div class="innertext">
                                     <span>Try it</span>
                                     <p></p>
                                     <h5>Customize your experiments</h5>
                                 </div>
                             </div>
-                            <!-- words below figure -->
                             <div class="lower">
                                 <h3>Off-Line Classification</h3>
                                 <span style="margin-left:18px;margin-right:7px;"><i class="fas fa-database"></i></span>
